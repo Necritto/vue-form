@@ -1,23 +1,31 @@
 <template>
   <div id="app">
-    <h1>Vue-form</h1>
+    <Form />
   </div>
 </template>
 
 <script>
+import Form from "@/components/Form";
+
 export default {
   name: "App",
-  components: {}
+  components: { Form }
 };
 </script>
 
 <style lang="scss">
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+  font-family: "Roboto", sans-serif;
+  background-color: #ffdf8c;
+  font-size: 14px;
 }
 </style>
